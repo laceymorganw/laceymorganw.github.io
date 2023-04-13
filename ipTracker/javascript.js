@@ -1,6 +1,6 @@
 var api_key = "at_vo1QbTNnZOXj1wLPoCcQdQr8o3TQb";
 
-var map = L.map('map').setView([51.505, -0.09], 13);
+var map = L.map('map').setView([40.69371, -73.98596], 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -13,7 +13,7 @@ var locationMarker = L.icon({
 });
 
 
-updateMap = (updateMap = [51.505, -0.09]) => {
+updateMap = (updateMap = [40.69371, -73.98596]) => {
     map.setView(updateMap, 13);
     L.marker((updateMap),{icon: locationMarker}).addTo(map);
 }
