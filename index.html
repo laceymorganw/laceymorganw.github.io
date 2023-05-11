@@ -7,33 +7,38 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/c0319300c2.js" crossorigin="anonymous"></script>
   <title>LW Portfolio</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
 
-<nav>
-  <ul>
-    <li><a>skills</a></li>
-    <li><a>projects</a></li>
-    <li><a>resume</a></li>
-    <li><a>contact</a></li>
-    <button class="navbar-toggler">
-      <span class="fa-solid fa-bars"></span>
-    </button>
-  </ul>
-</nav>
+  <nav>
+    <ul>
+      <button class="navbar-toggler" onclick="mobileMenuShow()">
+        <span class="fa-solid fa-bars"></span>
+      </button>
+      <div class="navbar" id="navbar">
+        <li><a>skills</a></li>
+        <li><a>projects</a></li>
+        <li><a>resume</a></li>
+        <li><a>contact</a></li>
+      </div>
+    </ul>
+  </nav>
 
 
-<h1>PROJECTS</h1>
-<a href="qrCode.html">QR CODE</a>
-<a href="ipTracker/index.html">IP TRACKER</a>
+  <h1>PROJECTS</h1>
+  <a href="qrCode.html">QR CODE</a>
+  <a href="ipTracker/index.html">IP TRACKER</a>
 
 
-<section>
-  <div>
-    <h1>Hi i'm Lacey. Front End Developer and UI/UX enthusiast</h1>
-  </div>
-</section>
+  <section>
+    <div>
+      <h1>Hi i'm Lacey. Front End Developer and UI/UX enthusiast</h1>
+    </div>
+  </section>
+
+  <script src="javascript/javascript.js"></script>
 </body>
 
 </html>
