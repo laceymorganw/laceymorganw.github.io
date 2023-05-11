@@ -94,7 +94,6 @@ button.navbar-toggler{
 
     .mobile-menu{
         position:relative;
-        float: right;
         display: block;
         margin-top: 10px;
     }
@@ -102,7 +101,6 @@ button.navbar-toggler{
     .mobile-menu li{
         display: block;
         padding: 0px;
-        float: right;
     }
 
     .mobile-menu li a {
