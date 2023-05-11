@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 * {
@@ -5,6 +6,7 @@
 }
 
 :root {
+    --main-font-color: rgb(255, 252, 247);
     --shrikhand-font: 'Shrikhand', cursive;
 }
 
@@ -62,14 +64,12 @@ ul {
     display: none;
 }
 
-.mobile-menu{
-    display: none;
-}
 
-.fa-bars{
+.fa-bars, .fa-xmark{
     font-size: 40px;
     color: white;
 }
+
 
 button.navbar-toggler{
     background-color: transparent;
@@ -87,7 +87,7 @@ button.navbar-toggler{
     .navbar-toggler {
         position: absolute;
         display: block;
-        padding: 10px;
+        padding: 30px;
         top: 0;
         right: 0;
     }
@@ -108,3 +108,37 @@ button.navbar-toggler{
     }
 
 }
+
+@media screen and (min-width: 320px) {
+    h1{
+        font-size: calc(40px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));
+    }
+}
+
+h1, .sub-heading{
+    color: var(--main-font-color);
+    font-family: var(--shrikhand-font);
+    font-weight: 300;
+}
+
+h1{
+    margin: 0px;
+}
+
+.sub-heading{
+    font-size: 20px;
+}
+
+.container{
+    padding: 50px;
+    margin: 20px;
+}
+
+
+ .gradient-border{
+    background: transparent;
+    border: solid 4px #47005F;
+   /*  border-image: linear-gradient(to left, #47005F, #004D44);
+    border-image-slice: 1; */
+    border-radius: 20px;
+} 
