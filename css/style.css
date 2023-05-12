@@ -91,7 +91,7 @@ button.navbar-toggler {
 
 h1,
 .sub-heading {
-    color: var(--main-font-color);
+    color: #47005F;
     font-family: var(--shrikhand-font);
     font-weight: 300;
 }

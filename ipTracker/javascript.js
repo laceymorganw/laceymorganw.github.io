@@ -1,4 +1,4 @@
-var api_key = "at_vo1QbTNnZOXj1wLPoCcQdQr8o3TQb";
+var api_key = "SECRET KEY";
 
 var map = L.map('map').setView([40.69371, -73.98596], 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
