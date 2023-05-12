@@ -18,6 +18,10 @@ html {
     background-attachment: fixed;
 }
 
+body {
+    background-color: transparent;
+}
+
 nav {
     margin-top: -16px;
     margin-left: -8px;
@@ -66,93 +70,80 @@ ul {
     display: none;
 }
 
+/*Overriding Bootrap*/
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+    color: white;
+}
 
-.fa-bars, .fa-xmark{
+
+.fa-bars,
+.fa-xmark {
     font-size: 40px;
     color: white;
 }
 
 
-button.navbar-toggler{
+button.navbar-toggler {
     background-color: transparent;
     border: none;
 }
 
-@media (max-width: 600px) {
-
-    /*Hide desktop navbar*/
-    .navbar {
-        display: none;
-    }
-
-    /*Show Mobile menu button*/
-    .navbar-toggler {
-        position: absolute;
-        display: block;
-        padding: 30px;
-        top: 0;
-        right: 0;
-    }
-
-    .mobile-menu{
-        position:relative;
-        display: block;
-        margin-top: 10px;
-    }
-
-    .mobile-menu li{
-        display: block;
-        padding: 0px;
-    }
-
-    .mobile-menu li a {
-        font-size: 25px;
-    }
-
-}
-
-@media screen and (min-width: 320px) {
-    h1{
-        font-size: calc(40px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));
-    }
-}
-
-h1, .sub-heading{
+h1,
+.sub-heading {
     color: var(--main-font-color);
     font-family: var(--shrikhand-font);
     font-weight: 300;
 }
 
-h1{
+h1 {
     margin: 0px;
 }
 
-.sub-heading{
+.sub-heading {
     font-size: 20px;
 }
 
-p{
+p {
     font-family: var(--body-font);
     color: var(--main-font-color);
+    text-align: justify;
+    margin-top: 1em;
 }
 
-.m-30{
+.m-30 {
     margin: 30px;
 }
 
-.mt-60{
+.mt-60 {
     margin-top: 60px;
 }
 
-.container{
+.row{
+    margin-left:0;
+    margin-right:0;
+}
+
+.hero-container{
     padding: 50px;
 }
 
-
- .gradient-border{
+.gradient-border {
     background: transparent;
     border: solid 4px #47005F;
-   /*  border-image: linear-gradient(to left, #47005F, #004D44);
+    /*  border-image: linear-gradient(to left, #47005F, #004D44);
     border-image-slice: 1; */
     border-radius: 20px;
-} 
+    width: 85%;
+    padding: 55px;
+}
+
+.profile-img {
+    position: absolute;
+    width: 25%;
+    margin-top: 6rem;
+    margin-left: 6rem;
+    border: none;
+    border-radius: 20px;
+    overflow-x: hidden;
+}
