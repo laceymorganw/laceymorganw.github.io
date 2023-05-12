@@ -126,6 +126,7 @@ p {
 
 .hero-container{
     padding: 50px;
+    overflow-x: hidden;
 }
 
 .gradient-border {
@@ -145,5 +146,4 @@ p {
     margin-left: 6rem;
     border: none;
     border-radius: 20px;
-    overflow-x: hidden;
 }
