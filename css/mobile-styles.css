@@ -37,14 +37,14 @@
     }
     
     .gradient-border {
-        width: 80%;
+        width: 75%;
         padding: 40px 5px;
-        margin-left:auto;
+        margin-left: 30px;
         margin-right: auto;
     }
     
     .profile-img {
-        width: 75%;
+        width: 55%;
         margin-top: 0;
         margin-right: 0;
     }
