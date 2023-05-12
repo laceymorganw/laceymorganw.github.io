@@ -33,6 +33,7 @@
 
     .hero-container{
         padding: 0px;
+        overflow-x: hidden !important;
     }
     
     .gradient-border {
