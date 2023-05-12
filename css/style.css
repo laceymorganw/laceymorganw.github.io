@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,6 +9,7 @@
 :root {
     --main-font-color: rgb(255, 252, 247);
     --shrikhand-font: 'Shrikhand', cursive;
+    --body-font: 'Poppins', sans-serif;
 }
 
 html {
@@ -129,9 +131,21 @@ h1{
     font-size: 20px;
 }
 
+p{
+    font-family: var(--body-font);
+    color: var(--main-font-color);
+}
+
+.m-30{
+    margin: 30px;
+}
+
+.mt-60{
+    margin-top: 60px;
+}
+
 .container{
     padding: 50px;
-    margin: 20px;
 }
 
 

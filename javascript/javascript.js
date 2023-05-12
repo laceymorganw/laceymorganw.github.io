@@ -3,6 +3,6 @@
 $(document).ready(function () {
     $(".navbar-toggler").click(function () {
         $(".navbar").slideToggle("slow").addClass("mobile-menu");
-        $("span").toggleClass("fa-xmark");
+        $(".fa-solid").toggleClass("fa-xmark");
     });
 });
