@@ -90,9 +90,9 @@ button.navbar-toggler {
     border: none;
 }
 
-h1,
+h1, h2,
 .sub-heading {
-    color: #47005F;
+    color: #e2a6f6;
     font-family: var(--shrikhand-font);
     font-weight: 300;
 }
