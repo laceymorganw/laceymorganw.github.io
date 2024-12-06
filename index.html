@@ -8,6 +8,7 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/mobile-styles.css">
+  <link rel="icon" type="image/x-icon" href="images/corgifavicon.ico">
   <script src="https://kit.fontawesome.com/c0319300c2.js" crossorigin="anonymous"></script>
   <title>LW Portfolio</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -30,7 +31,7 @@
   </nav>
 
   <section>
-    <div class="container hero-container mt-60 mx-auto">
+    <div class="container hero-container mt-60 mb-60 mx-auto">
       <div class="row gradient-border">
         <div class="col-auto col-md-7 px-3 ps-md-5">
           <p class="sub-heading">Hi, my name is </p>
@@ -47,6 +48,102 @@
           <span>
             <img src="images/laceyProfilePic.jpg" class="profile-img" alt="Picture of Lacey Woodbury">
           </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--SOME SKILLS OF MINE-->
+  <section>
+    <div class="container p-5">
+      <div class="row">
+        <h2 class="heading-stroke-font mb-5">
+          some skills of mine
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col">
+          <!--SKILL DESIGN-->
+          <div class="row skills-continer">
+            <div class="col">
+            <p id="design" class="skill-title">Design</p>
+            </div>
+          </div>
+          <!--SKILL CODE-->
+          <div class="row skills-continer">
+            <div class="col">
+              <p id="codeSkills" class="skill-title">Code</p>
+            </div>
+          </div>
+          <!--SKILL SOFTWARE & PLATFORMS-->
+          <div class="row skills-continer">
+            <div class="col">
+              <p id="softwarePlatforms" class="skill-title">Software &<br>Platfroms</p>
+            </div>
+          </div>
+          <!--SKILL VERSION CONTROL-->
+          <div class="row skills-continer">
+            <div class="col">
+              <p id="versionControl" class="skill-title">Version Control</p>
+            </div>
+          </div>
+          <!--SKILL LIKE-->
+          <div class="row skills-continer">
+            <div class="col">
+              <p id="lifeSkills" class="skill-title">Life</p>
+            </div>
+          </div>
+        </div>
+        <div class="col skills-divider"></div>
+        <div class="col">
+          <!--SKILL DESIGN ITEMS-->
+          <div class="row skills-continer">
+            <ul id="designSkills float-start" class="skills">
+              <li class="skill-item">Figma</li>
+              <li class="skill-item">FigJam</li>
+              <li class="skill-item">Adobe Illustrator</li>
+              <li class="skill-item">Adobe XD</li>
+              <li class="skill-item">Adobe Photoshop</li>
+            </ul>
+          </div>
+          <!--SKILL CODE ITEMS-->
+          <div class="row skills-continer">
+            <ul id="codeSkillItems" class="skills">
+              <li class="skill-item">HTML</li>
+              <li class="skill-item">CSS</li>
+              <li class="skill-item">JavaScript</li>
+              <li class="skill-item">JQuery</li>
+              <li class="skill-item">Bootstrap</li>
+            </ul>
+          </div>
+          <!--SKILL SOFTWARE & PLATFORMS ITEMS-->
+          <div class="row skills-continer">
+            <ul id="codeSkillItems" class="skills">
+              <li class="skill-item">VS Code</li>
+              <li class="skill-item">Webflow</li>
+              <li class="skill-item">ClickUP</li>
+              <li class="skill-item">Monday.com</li>
+              <li class="skill-item">Azure DevOps</li>
+            </ul>
+          </div>
+          <!--SKILL VERSION CONTROL-->
+          <div class="row skills-continer">
+            <ul id="versionControlSkills" class="skills">
+              <li class="skill-item">Git</li>
+              <li class="skill-item">Git Bash</li>
+              <li class="skill-item">Azure DevOps</li>
+            </ul>
+          </div>
+          <!--SKILL LIFE-->
+          <div class="row skills-continer">
+            <ul id="lifeSkillItems" class="skills">
+              <li class="skill-item">Baking</li>
+              <li class="skill-item">Can make a mean steak</li>
+              <li class="skill-item">Learning Japanesse (it's hard....but fun)</li>
+              <li class="skill-item">Can talk to people</li>
+              <li class="skill-item">Can type without looking at the keyboard (most of the time)</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -71,7 +168,7 @@
           on hover and the Toast was used to display the ticket information selection after a user pressed purchase
           tickets.</p>
         <div>
-          <a href="projects/academy-cinemas/index.html"> <button>View Project</button> </a>
+          <a target=”_blank” href="projects/academy-cinemas/index.html"> <button>View Project</button> </a>
         </div>
       </div>
     </div>
@@ -89,7 +186,7 @@
           and to practice how different values and combinations can change the styling of an HTML element.
         </p>
         <div>
-          <a href="projects/Simple-Recipes/index.html"> <button>View Project</button> </a>
+          <a target=”_blank” href="projects/Simple-Recipes/index.html"> <button>View Project</button> </a>
         </div>
       </div>
     </div>
@@ -98,11 +195,13 @@
     <div class="row">
       <div class="col-auto col-6 px-3">
         <h2>IP Tracker</h2>
-        <p>This is a Front Mentor Project, the challenge was to use and API to find the location of your current IP Address. 
-          For request limitations the API key was removed from the code to for security reasons as this is all hosted on GitHub. 
+        <p>This is a Front Mentor Project, the challenge was to use and API to find the location of your current IP
+          Address.
+          For request limitations the API key was removed from the code to for security reasons as this is all hosted on
+          GitHub.
         </p>
         <div>
-          <a href="projects/ipTracker/index.html"> <button>View Project</button> </a>
+          <a target=”_blank” href="projects/ipTracker/index.html"> <button>View Project</button> </a>
         </div>
       </div>
     </div>
