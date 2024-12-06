@@ -49,6 +49,18 @@
         margin-top: 0;
         margin-right: 0;
     }
+    
+    .skill-title{
+        font-size: 15px;
+    }
+    
+    .skills > .skill-item{
+        font-size: 12px;
+    }
+    
+    .skills-continer{
+        height: 170px;
+    }
 
 }
 

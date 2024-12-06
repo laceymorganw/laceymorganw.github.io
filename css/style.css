@@ -21,6 +21,7 @@ html {
 body {
     width: 100%;
     background-color: transparent;
+    overflow-x: hidden;
 }
 
 nav {
@@ -168,11 +169,13 @@ p {
 
 .skills{
     display: block;
+    padding: 5px;
 }
 
 .skill-title{
     font-size: 30px;
     float: right;
+    margin-top: 5px;
 }
 
 .skills > .skill-item{
