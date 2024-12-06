@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <script src="https://kit.fontawesome.com/c0319300c2.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        /*GOOGLE FONT API*/
+        @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --main-font: 'Outfit', sans-serif;
+            --white: hsl(0, 0%, 100%);
+            --light-gray: hsl(212, 45%, 89%);
+            --grayish-blue: hsl(220, 15%, 55%);
+            --dark-blue: hsl(218, 44%, 22%);
+            --body-font-size: 15px;
+        }
+
+        body {
+            background-color: var(--light-gray);
+        }
+
+        /*LAYOUT STYLES*/
+        .qr-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 8%;
+        }
+
+        .qr-row {
+            padding: 20px;
+            width: 400px;
+            background-color: var(--white);
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /*MOBILE LAYOYT STYLES*/
+        @media (max-width: 680px) {
+            .qr-container {
+                margin-top: 5%;
+            }
+
+            .qr-row {
+                width: 350px;
+            }
+        }
+
+        /*QR IMAGE STYLES*/
+        .qr-image {
+            border: none;
+            border-radius: 20px;
+            width: 100%;
+
+        }
+
+        .qr-text-container {
+            padding: 10px 30px;
+        }
+
+        /*TEXT STYLES*/
+        h2 {
+            font-family: var(--main-font);
+            font-weight: 700;
+            color: var(--dark-blue);
+            text-align: center;
+        }
+
+        p {
+            font-family: var(--main-font);
+            font-weight: 400;
+            font-size: var(--body-font-size);
+            color: var(--grayish-blue);
+            text-align: center;
+        }
+
+        .fa-arrow-left {
+            margin: 0px 10px;
+        }
+
+        a {
+            color: var(--dark-blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--grayish-blue);
+        }
+
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <!--QR CODE CARD-->
+    <div class="qr-container">
+        <div class="qr-row">
+            <!--QR CODE IMAGE-->
+            <div>
+                <img class="qr-image" src="images/image-qr-code.png" alt="QR code image">
+            </div>
+            <!--QR CODE TEXT-->
+            <div class="qr-text-container">
+                <h2>Improve your front-end skills by building projects </h2>
+                <p>Scan the QR code to visit Frontend <br> Mentor and take your coding skills <br>to the next level</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2><a href="index.html"><i class="fa-solid fa-arrow-left"></i>Back</a></h2>
+    </div>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="index.html">Lacey Morgan</a>.
+    </div>
+</body>
+
+</html>
