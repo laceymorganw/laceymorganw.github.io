@@ -102,10 +102,11 @@ h1 {
     margin: 0px;
 }
 
-.heading-stroke-font{
+.section-header{
     -webkit-text-stroke: 1px #B9FFF7;
     color: #b9fff700;
     font-family: var(--shrikhand-font);
+    font-size: 60px;
 }
 
 .sub-heading {
@@ -134,6 +135,7 @@ p {
 
 .hero-container{
     padding: 50px;
+    margin-bottom: 100px;
     overflow-x: hidden;
 }
 
@@ -178,11 +180,11 @@ p {
     margin-top: 5px;
 }
 
-.skills > .skill-item{
-    list-style-type: none;
-    font: var(--body-font);
+.skill-item{
+    font-family: var(--body-font);
     color: var(--main-font-color);
-    margin: 2px;
+    margin: 5px;
+    list-style-type: none;
 }
 
 .skills-continer{
