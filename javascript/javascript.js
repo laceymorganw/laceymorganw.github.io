@@ -6,3 +6,7 @@ $(document).ready(function () {
         $(".fa-solid").toggleClass("fa-xmark");
     });
 });
+
+var date = new Date().getFullYear();
+
+document.getElementById("year").innerHTML = date;
