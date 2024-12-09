@@ -38,10 +38,9 @@
     }
 
     .gradient-border {
-        width: 75%;
+        width: 90%;
         padding: 40px 5px;
-        margin-left: 30px;
-        margin-right: auto;
+        margin: 10px auto;
     }
 
     .profile-img {
@@ -61,6 +60,11 @@
 
     .skills-continer {
         height: 190px;
+    }
+
+    .card{
+        width: 100%;
+        padding: 10px;
     }
 
 }

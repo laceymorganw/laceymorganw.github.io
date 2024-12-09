@@ -19,6 +19,8 @@ html {
 }
 
 body {
+    scroll-behavior: smooth;
+    scroll-margin-top: 20px;
     width: 100%;
     background-color: transparent;
     overflow-x: hidden;
@@ -91,7 +93,10 @@ button.navbar-toggler {
     border: none;
 }
 
-h1, h2,
+h1,
+h2,
+h3,
+h4,
 .sub-heading {
     color: #e2a6f6;
     font-family: var(--shrikhand-font);
@@ -102,7 +107,15 @@ h1 {
     margin: 0px;
 }
 
-.section-header{
+h3 {
+    font-size: 40px;
+}
+
+.sub-heading {
+    font-size: 20px;
+}
+
+.section-header {
     -webkit-text-stroke: 1px #B9FFF7;
     color: #b9fff700;
     font-family: var(--shrikhand-font);
@@ -120,6 +133,36 @@ p {
     margin-top: 1em;
 }
 
+.button-one,
+.button-two {
+    border-radius: 100px;
+    padding: 10px 20px;
+    color: var(--main-font-color);
+    font-family: var(--body-font);
+    transition: 1s ease;
+}
+
+.button-one {
+    background-color: rgba(0, 0, 0, 0);
+    border: 4px solid #B9FFF7;
+}
+
+.button-one:hover {
+    background-color: #B9FFF7;
+    color: #002017;
+    transition: 1s ease;
+}
+
+.button-two {
+    border: 4px solid #47005F;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--main-font-color);
+}
+
+.button-two:hover {
+    background-color: #47005F;
+}
+
 .m-30 {
     margin: 30px;
 }
@@ -128,12 +171,12 @@ p {
     margin-top: 60px;
 }
 
-.row{
-    margin-left:0;
-    margin-right:0;
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.hero-container{
+.hero-container {
     padding: 50px;
     margin-bottom: 100px;
     overflow-x: hidden;
@@ -145,22 +188,20 @@ p {
     /*  border-image: linear-gradient(to left, #47005F, #004D44);
     border-image-slice: 1; */
     border-radius: 20px;
-    width: 85%;
     padding: 55px;
 }
 
 .profile-img {
     position: absolute;
-    width: 25%;
-    margin-top: 6rem;
-    margin-left: 6rem;
+    width: 30%;
+    margin: auto auto;
     border: none;
     border-radius: 20px;
 }
 
 /*SKILLS SECTION*/
 
-.skills-divider{
+.skills-divider {
     flex: none;
     background-image: linear-gradient(320deg, #004D44, #47005F);
     background-size: cover;
@@ -169,24 +210,56 @@ p {
     width: 2px;
 }
 
-.skills{
+.skills {
     display: block;
     padding: 5px;
 }
 
-.skill-title{
+.skill-title {
     font-size: 30px;
     float: right;
     margin-top: 5px;
 }
 
-.skill-item{
+.skill-item {
     font-family: var(--body-font);
     color: var(--main-font-color);
     margin: 5px;
     list-style-type: none;
 }
 
-.skills-continer{
+.skills-continer {
     height: 200px;
+}
+
+/*PROJECTS*/
+/* .projects-container{
+
+} */
+
+.projects-container {
+    width: 85%;
+    margin: auto;
+}
+
+.card {
+    width: 48%;
+    --bs-card-bg: none;
+    --bs-card-border-color: none;
+    padding: 20px;
+}
+
+.card-img-top {
+    border-radius: 0.375rem;
+}
+
+.project-hightligts{
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 0px;
+}
+
+.project-hightligts > li {
+    font-family: var(--body-font);
+    color: var(--main-font-color)
 }

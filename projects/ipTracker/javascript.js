@@ -8,14 +8,14 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var locationMarker = L.icon({
     iconUrl: './images/icon-location.svg',
-    iconSize:     [35, 45], // size of the icon
-    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+    iconSize: [35, 45], // size of the icon
+    iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
 });
 
 
 updateMap = (updateMap = [40.69371, -73.98596]) => {
     map.setView(updateMap, 13);
-    L.marker((updateMap),{icon: locationMarker}).addTo(map);
+    L.marker((updateMap), { icon: locationMarker }).addTo(map);
 }
 
 function getIP() {

@@ -22,8 +22,9 @@
         <span class="fa-solid fa-bars"></span>
       </button>
       <div class="navbar" id="navbar">
-        <li><a>skills</a></li>
-        <li><a>projects</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a>design</a></li>
         <li><a href="images/LaceyWoodburyResume.pdf" target="_blank">resume</a></li>
         <li><a>contact</a></li>
       </div>
@@ -54,7 +55,7 @@
   </section>
 
   <!--SOME SKILLS OF MINE-->
-  <section>
+  <section id="skills">
     <div class="container py-5">
       <div class="row">
         <h2 class="section-header text-center mb-5">
@@ -148,8 +149,189 @@
       </div>
     </div>
   </section>
+  <!--PROJECTS-->
+  <section id="projects">
+    <div class="projects-container py-5">
+      <div class="row">
+        <h2 class="section-header text-center mb-5">
+          some things i've made
+        </h2>
+      </div>
+      <div class="d-flex flex-row flex-wrap">
+        <!--ACADEMY CINEMAS-->
+        <div class="col col-6 card">
+          <img src="images/academycinameas.png" class="card-img-top" alt="Project Academy Cinemas Cover Photo">
+          <div class="card-body">
+            <h3>Acamdey Cinemas</h3>
+            <p class="card-text">As a coding boot camp instructor at The Tech Academy, I create this project to use in a
+              series of tutorial videos to teach students how to use Bootstrap.
+              <br>
+              <br>
+              This series covered order of importance, how to override bootstrap styling with custom styling, the use of
+              bootstrap layouts (containers, columns, and rows), and layout styling.
+            </p>
+            <h4>Project Highlights</h4>
+            <ul class="project-hightligts">
+              <li>A "shrink on scroll" effect for the navigation bar using JQuery</li>
+              <li>A responsive feature to collapse the navbar on mobile screens after selecting a nav item,
+                while ensuring it does not close prematurely when a submenu is open.</li>
+              <li>Integrated Bootstrap JavaScript components:
+                <ul>
+                  <li><strong>Popover:</strong> Displays star ratings for movies when hovering.</li>
+                </ul>
+              </li>
+            </ul>
+            <h4>skills used</h4>
+            <ul class="project-hightligts">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+              <li>JQuery</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <a href="projects/academy-cinemas/index.html" target="_blank"><button class="button-one">View
+                Project</button></a>
+            <a href="https://github.com/laceymorganw/academy-cinemas" target="_blank"><button
+                class="button-two ms-sm-0 ms-md-3 mt-md-4 mt-4">View on
+                GitHub</button></a>
+          </div>
+        </div>
 
- 
+        <!--SIMPLE RECIPES-->
+        <div class="col col-6 card">
+          <img src="images/simpleRecipes.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3>Simple Recipes</h3>
+            <p class="card-text">I created this project and wrote the code as a coding boot camp instructor at
+              The Tech Academy. This was then turned into a tutorial series of 10 short 8-10-minute videos.
+              <br><br>
+              This project intended to give students at the Tech Academy a basic understanding of CSS, what it is,
+              how to use it within HTML files, the importance of different CSS concepts such as order of importance,
+              the difference between selectors (type, class, and ID), and to practice how different values and
+              combinations can change the styling of an HTML element.
+            </p>
+            <h4>Project Highlights</h4>
+            <ul class="project-hightligts">
+              <li>Built on a gradient structure
+                <ul class="project-hightligts">
+                  <li>Initial files in the repository cover HTML and CSS only.</li>
+                  <li>A separate folder was later added to include JavaScript, keeping base files unchanged for proper
+                    tutorial scripting.</li>
+                </ul>
+              </li>
+              <li>Javascript Features:
+                <ul class="project-hightligts">
+                  <li>Takes all recipe buttons on the page and creates an array.</li>
+                  <li>Detects the selected item from the array and determines which button was pressed.</li>
+                  <li>Displays a pop-up modal with recipe ingredients and instructions.</li>
+                  <li>Implements a form validator to capture and display form data in the console.</li>
+                </ul>
+              </li>
+            </ul>
+            <h4>skills used</h4>
+            <ul class="project-hightligts">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+              <li>JQuery</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <a href="projects/Simple-Recipes/index.html" target="_blank"><button class="button-one">View
+                Project</button></a>
+            <a href="https://github.com/laceymorganw/Simple-Recipes" target="_blank"><button
+                class="button-two ms-sm-0 ms-md-3 mt-md-4 mt-4">View on
+                GitHub</button></a>
+          </div>
+        </div>
+
+        <!--IP Tracker-->
+        <div class="col col-6 card">
+          <img src="images/ipTracker.png" class="card-img-top" alt="IP Tracker Cover Photo">
+          <div class="card-body">
+            <h3>IP Tracker</h3>
+            <p class="card-text">
+              This IP Tracker was via FrontEnd Mentor. I chose to do this challenge on my own to really challenge my
+              JavaScript
+              and API integrations skills. It takes the input of any IP Address and gives the location, zip and state.
+              This project
+              also covered handling user inputs, and presenting data in a user-friendly interface.
+              <br>
+              <br> *Due to API call limitations I have removed the API key from this project for security reasons but
+              feel free to look around the code on my GitHub.
+            </p>
+            <h4>Project Highlights</h4>
+            <ul class="project-hightligts">
+              <li>Accepts any valid IP address as input for tracking.</li>
+              <li><strong>Geo-API Integration:</strong> Fetches real-time location data, including the city, region,
+                country, and coordinates associated with the IP address.</li>
+              <li><strong>Map Display:</strong> Visualizes the exact location on an interactive map, enhancing the
+                user experience.</li>
+            </ul>
+            <h4>skills used</h4>
+            <ul class="project-hightligts">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>AJAX</li>
+              <li>GEO LOCATION API</li>
+              <li>JQuery</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <a href="projects/ipTracker/index.html" target="_blank"><button class="button-one">View
+                Project</button></a>
+            <a href="https://github.com/laceymorganw/laceymorganw.github.io/tree/main/projects/ipTracker"
+              target="_blank"><button class="button-two ms-sm-0 ms-md-3 mt-md-4 mt-4">View on
+                GitHub</button></a>
+          </div>
+        </div>
+
+        <!--LANCH COUNTDOWN-->
+        <div class="col col-6 card">
+          <img src="images/CountDown.png" class="card-img-top" alt="Launch Countdown Cover Photo">
+          <div class="card-body">
+            <h3>Launch Countdown</h3>
+            <p class="card-text">
+              This is another coding challenge from FrontEnd mentor. I choose this for it's complicated but simple
+              layout.
+              Looking at this design I knew that I couldn't simply just put a number in a box and call it a day and add
+              some JavaScript.
+              This is still a work in progress through but wanted to showcase the counter. I will later add an animation
+              the created a flipped
+              effect on each number as it changes and once the countdown hits 0 another animation of a rocket launnch
+              clears the counter and shoots up the screen.</p>
+            <h4>Project Highlights</h4>
+            <ul class="project-hightligts">
+              <li>Created layout and div nesting for timer box.</li>
+              <li>Created Javascript timer</li>
+            </ul>
+            <h4>skills used</h4>
+            <ul class="project-hightligts">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <a href="projects/launchCountdown/index.html" target="_blank"><button class="button-one">View
+                Project</button></a>
+            <a href="https://github.com/laceymorganw/laceymorganw.github.io/tree/main/projects/ipTracker"
+              target="_blank"><button class="button-two ms-sm-0 ms-md-3 mt-md-4 mt-4">View on
+                GitHub</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <script src="javascript/javascript.js"></script>
 </body>
